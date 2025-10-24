@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أذكار المسلم والمسبحة الراقية</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>الموقع الرسمي للمطوّر — amro afag</title>
 <style>
-body {
-  font-family: "Tahoma", sans-serif;
-  background: linear-gradient(180deg, #f8fbff, #fffbe9);
-  text-align: center;
-  padding-top: 100px;
-}
-a { color: #0078d4; text-decoration: none; font-weight: bold; }
-h1 { color: #028174; }
+  :root { --primary:#0ea5e9; --ink:#0f172a; --muted:#64748b; --bg:#f8fafc; }
+  body{margin:0;background:var(--bg);font-family:"Tahoma",system-ui,sans-serif;color:var(--ink)}
+  .wrap{max-width:920px;margin:0 auto;padding:48px 16px}
+  header{ text-align:center; margin-bottom:28px }
+  h1{margin:0 0 6px;font-size:28px;color:var(--primary)}
+  p.desc{margin:0;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+  .card h3{margin:0 0 8px;font-size:18px}
+  .links a{display:inline-block;margin:6px 8px 0 0;text-decoration:none;font-weight:700;color:#0369a1}
+  .links a:hover{text-decoration:underline}
+  footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+  .pill{display:inline-block;background:#e0f2fe;color:#0369a1;border-radius:999px;padding:.25rem .6rem;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
-<h1>🌿 أذكار المسلم والمسبحة الراقية 🌿</h1>
-<p>مرحباً بكم في الموقع الرسمي لتطبيق أذكار المسلم والمسبحة الراقية</p>
-<p><a href="app-ads.txt">📜 ملف app-ads.txt</a></p>
-<p><a href="https://play.google.com/store/apps/details?id=com.azkar2025.afag">متجر Google Play</a></p>
-<p>تم التطوير بواسطة amro afag – <a href="mailto:121yu122@gmail.com">121yu122@gmail.com</a></p>
+  <div class="wrap">
+    <header>
+      <h1>الموقع الرسمي للمطوّر – amro afag</h1>
+      <p class="desc">صفحة موحّدة لكل التطبيقات • ملف إثبات الملكية متاح أدناه</p>
+      <p style="margin-top:10px">
+        <a class="pill" href="app-ads.txt" target="_blank">📜 فتح ملف app-ads.txt</a>
+      </p>
+    </header>
+
+    <!-- قائمة التطبيقات (أضف/عدّل بطاقات كما تشاء) -->
+    <section>
+      <div class="grid">
+
+        <article class="card">
+          <h3>أذكار المسلم والمسبحة الراقية</h3>
+          <p class="desc">تطبيق للأذكار والمسبحة الرقمية.</p>
+          <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.azkar2025.afag" target="_blank">Google Play</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>القرآن الكريم كامل</h3>
+          <p class="desc">تلاوة ومصحف كامل بدون إنترنت (مثال).</p>
+          <div class="links">
+            <!-- عدّل المعرّف لمعرّف تطبيق القرآن الحقيقي لديك -->
+            <a href="https://play.google.com/store/apps/details?id=com.quran2025.full" target="_blank">Google Play</a>
+          </div>
+        </article>
+
+        <!-- مثال لتطبيق جديد — انسخ البطاقة وعدّل الاسم والروابط -->
+        <article class="card">
+          <h3>اسم تطبيق آخر</h3>
+          <p class="desc">وصف مختصر للتطبيق.</p>
+          <div class="links">
+            <a href="#" target="_blank">Google Play</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+      تم التطوير بواسطة amro afag — <a href="mailto:121yu122@gmail.com">121yu122@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>
